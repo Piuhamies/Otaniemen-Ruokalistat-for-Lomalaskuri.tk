@@ -1,4 +1,9 @@
-# Otaniemen-Ruokalistat
+# Otaniemen-Ruokalistat-for-Lomalaskuri
+
+Forkki otaniemen ruokalistoista, jota käytetään lomalaskurin otaniemen lukion ruokalistojen backendina. 
+Tästä versiosta tullaan poistamaan turhat ominaisuudet, kuten telegram tuki.
+
+
 Yksinkertainen Go ohjelma, joka hakee ISS:n nettisivustolta (https://ravintolapalvelut.iss.fi/espoon-tietokylä) Otaniemen lukion ruokalistan pyydettäessä. 
 Idea varastettu toiselta telegram botilta <s>joka ei ilmeisesti ole ainakaan tällä hetkellä käytössä.</s>
 ## Setup
