@@ -49,6 +49,9 @@ func GetThisWeeksFood() (Viikko, error) {
 
 		return true
 	})
+	if lista == nil { //Return the function if the lunch menu wasn't found.
+		return Viikko{}, err
+	}
 	lista.Find(".lunch-menu__days .lunch-menu__day").EachWithBreak(func(i int, s *goquery.Selection) bool {
 		if count >= 5 { // kinda scuff but works
 			return false

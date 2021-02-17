@@ -5,14 +5,12 @@ import (
 	"fmt"
 	"os"
 
-	"otaniemenruokalistat.tk/telegram"
 	"otaniemenruokalistat.tk/webapi"
 )
 
 func main() {
 	fmt.Println("Initializing...")
-	go telegram.Init() // Kommentoi tämä rivi pois sammuttaaksesi telegram botin
-	go webapi.Init()   // Sama mutta webserver
+	go webapi.Init()
 	fmt.Println("PRESS ENTER TO EXIT")
 	input := bufio.NewScanner(os.Stdin)
 	input.Scan()
